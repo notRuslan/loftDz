@@ -77,12 +77,13 @@ module.exports = {
                             options: {
                                 plugins: [
                                     autoprefixer({
-                                        browsers: ['ie >= 8', 'last 4 version']
+                                        browsers: ['ie >= 10', 'last 2 version']
                                     })
                                 ]
                             }
                         },
-                        { loader: 'sass-loader' }
+                        { loader: 'sass-loader' },
+                        // { loader: 'resolve-url-loader' }
                     ],
                 }),
             },
