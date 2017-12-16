@@ -46,9 +46,9 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             name: 'common'
         }),
-        new OptimizeCssAssetsPlugin(({
-            cssProcessorOptions: { postcssDiscardComments: { removeAll: true } }
-        })),
+        // new OptimizeCssAssetsPlugin(({
+        //     cssProcessorOptions: { postcssDiscardComments: { removeAll: true } }
+        // })),
         new StyleLintPlugin({
             configFile: './.stylelintrc',
         }),
@@ -56,7 +56,7 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         }),
-        new UglifyJSPlugin()
+        // new UglifyJSPlugin()
     ],
     module: {
         rules: [{
@@ -77,12 +77,13 @@ module.exports = {
                             options: {
                                 plugins: [
                                     autoprefixer({
-                                        browsers: ['ie >= 8', 'last 4 version']
+                                        browsers: ['ie >= 11', 'last 1 version']
                                     })
                                 ]
                             }
                         },
-                        { loader: 'sass-loader' }
+                        { loader: 'sass-loader' },
+                        // { loader: 'resolve-url-loader' }
                     ],
                 }),
             },
