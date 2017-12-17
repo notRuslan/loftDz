@@ -109,9 +109,12 @@ module.exports = {
                 options: {
                     name: 'images/[name].[ext]'
                 }
+            },
+            {
+                test: /\.(woff|woff2|ttf)$/,
+                loader: 'file-loader',
+                options: { name: 'css/fonts/[name].[ext]' }
             }
-
-
         ]
     }
 };
