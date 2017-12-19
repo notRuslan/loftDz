@@ -9,16 +9,23 @@ block content
                 .head__socials
                     ul.soc-net
                         li.soc-net__item
-                            a.soc-net__vk(href="#" target="_blank") 
+                            a.soc-net__vk(href="#" target="_blank")
+                                include ./vk.svg 
                         li.soc-net__item
                             a.soc-net__gh(href="#" target="_blank") 
+                                include ./gh.svg 
                         li.soc-net__item
                             a.soc-net__in(href="#" target="_blank") 
+                                include ./in.svg 
                 .head__menu
+                    a.head__menu-icon(href="#")
+                        include ./hamburger.svg
             .person__avatar
-                .avater__container
+                .avatar__container
                     .avatar__img
-                        .avatar__pic
+                        img.avatar__pic(src="./images/avatar.png")
+                    .avatar__header
+                    .avatar__description
             .person__button
         
 

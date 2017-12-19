@@ -77,7 +77,7 @@ module.exports = {
                             options: {
                                 plugins: [
                                     autoprefixer({
-                                        browsers: ['ie >= 11', 'last 1 version']
+                                        browsers: ['ie >= 12', 'last 0 version']
                                     })
                                 ]
                             }

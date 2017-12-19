@@ -3,4 +3,6 @@ build
 .idea/
 FONTS/
 icons/
+deploy.webpack.config.js
+sftp.webpack.config.js
 

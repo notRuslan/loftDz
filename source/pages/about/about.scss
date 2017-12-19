@@ -7,38 +7,48 @@
     background: #83acac;
     background: #83acac url(./bg_1800x789.png) center center no-repeat;
     background-size: cover;
+    overflow: hidden;
+}
+
+.person__head{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 30px 0 30px;
+
 }
 
 .head__socials {
-    padding: 32px 0 0 30px;
+    // padding: 0 0 0 30px;
     width: 200px;
 }
 
 .soc-net {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+
     &__item {
-        width: 44px;
-        height: 32px;
+        // width: 32px;
+        // height: 24px;
         // border: 1px dashed #fff;
+        // display: block;
+        padding: 0 30px 0 0;
     }
-    &__vk,
-    &__gh,
-    &__in {
-        width: 100%;
-        height: 100%;
-        display: block;
+    
+    
+}
+
+.soc-icon path{
+    
+
+
+    &:hover{
+        fill: blue;
     }
-    &__vk {
-        background: url(./vk.png)no-repeat center 0;
-        background-size: cover;
-    }
-    &__gh {
-        background: url(./gh.png)no-repeat center 0;
-        background-size: cover;
-    }
-    &__in {
-        background: url(./in.png)no-repeat center 0;
-        background-size: cover;
-    }
+   
+}
+
+.menu-icon{
+width: 44px;
+height: 38px;
+
 }
